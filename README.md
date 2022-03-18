@@ -1,6 +1,7 @@
 # small
 
-Dev-Small is a dev-version of small, s tiny userland distro. This is the aarch64 version patched to run with proot-distro under termux.
+Dev-Small is a dev-version of small, s tiny userland distro. This is the aarch64 version patched to run with proot-distro under termux.  
+This version have g++ installed, to compile Aarch64 musl C/C++ linked binaries  
 
 ##### Full Install on Termux
 
@@ -27,6 +28,14 @@ dev-small
 - Run a command inside small
 ```bash
 dev-small ls -a
+```
+
+##### Compile a binarie
+```shell
+g++ -o helloWorld helloWorld.cpp
+strip --strip-unneeded helloWorld
+chmod 0775 helloWorld
+./helloWorld
 ```
 
 ##### Files
