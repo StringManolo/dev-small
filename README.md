@@ -31,7 +31,7 @@ dev-small ls -a
 ```
 
 ##### Compile a binarie
-```shell
+```bash
 g++ -o helloWorld helloWorld.cpp
 strip --strip-unneeded helloWorld
 chmod 0775 helloWorld
